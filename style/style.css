@@ -1,0 +1,276 @@
+body{
+    background-color: #FFFFFF;
+    font-family: 'Baskervville';
+    margin: 0; 
+    padding-bottom: 80px;
+}
+
+.container{
+    margin: auto;
+    width: 700px;
+  
+}
+.section-line{
+    border: solid 1px #EFEFF0;
+}
+
+.iconly-bold-home {
+  height: auto;
+  position: absolute;
+  left: 2.92px;
+  top: 2.33px;
+  overflow: visible;
+}
+.clear{
+  clear: both;
+}
+
+
+.menu-bar{
+  color: #010E54;
+  position: fixed; 
+  bottom: 0; 
+  width: 700px;
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  background-color: #fff; 
+  padding: 10px 0; 
+  z-index: 1000; 
+}
+.menu-bar div {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+  cursor: pointer; 
+}
+
+.menu-bar i {
+  font-size: 24px; 
+  margin-bottom: 5px; 
+}
+
+.menu-bar p {
+  font-size: 20px; 
+  margin: 0;
+}
+
+.profile-data{
+  margin: auto;
+  margin-top: 25px;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-data p {
+  font-size: 20px;
+}
+
+.quiz-sleep-data{
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+}
+.quiz-sleep-data p {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+.quiz-button-box {
+  display: inline-flex; 
+  margin-bottom: 20px;
+  border: 2px solid #010E54; 
+  border-radius: 20px; 
+  overflow: hidden; 
+  background-color: #f0f0f0; 
+}
+
+.quiz-button {
+  padding: 10px 20px; 
+  font-size: 17px; 
+  font-family: 'Baskervville', serif; 
+  color: #010E54; 
+  background-color: #f0f0f0; 
+  border: none; 
+  cursor: pointer; 
+  flex: 1; 
+  text-align: center;
+}
+
+.quiz-button:hover {
+  background-color: #e6e6e6;
+}
+
+.quiz-button.left-button {
+  border-right: 1px solid #010E54; }
+
+.quiz-button.right-button {
+  border-left: none; 
+}
+
+.sound-library{
+  padding:10px;
+}
+
+.sound-library p{
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+
+.scroll-container {
+  display: flex; 
+  gap: 20px; 
+  overflow-x: auto; 
+  padding: 10px 0; 
+
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #e6e6e6; 
+  border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sound-item {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+  min-width: 80px; 
+}
+
+.circle-image {
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50%; 
+  background-color: #e0e0e0; 
+  border: 2px solid #ccc; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.circle-image::after {
+  content: "\f03e"; 
+  font-family: "Font Awesome 5 Free"; 
+  font-size: 20px; 
+  color: #aaa; 
+}
+
+.sound-item p {
+  margin-top: 8px; 
+  font-size: 14px; 
+  color: #333; 
+}
+
+.horizontal-posts-bar {
+  margin-top: 20px; 
+  width: 100%;
+  padding: 10px; 
+}
+
+.horizontal-posts-bar p {
+  font-size: 25px; 
+  margin-bottom: 15px; 
+}
+
+.scroll-posts-container {
+  display: flex; 
+  gap: 20px; 
+  overflow-x: auto; 
+  padding-left: 10px;
+  padding-bottom: 10px; 
+}
+
+.scroll-posts-container::-webkit-scrollbar {
+  height: 8px; 
+}
+
+.scroll-posts-container::-webkit-scrollbar-thumb {
+  background-color: #e6e6e6; 
+  border-radius: 10px; 
+}
+
+.scroll-posts-container::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+.post-item {
+  border: 2px solid #ccc; 
+  border-radius: 10px; 
+  padding: 10px;
+  background-color: #FFFFFF; 
+  min-width: 250px; 
+  position: relative; 
+}
+
+.post-image {
+  width: 100%;
+  height: 120px; 
+  border-radius: 10px; 
+  border: 2px solid #ccc; 
+  background-color: #e0e0e0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.post-image::after {
+  content: "\f03e"; 
+  font-family: "Font Awesome 5 Free";
+  font-size: 40px; 
+  color: #aaa; 
+}
+
+.bookmark-checkbox {
+  display: none; 
+}
+
+.bookmark-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #808080;
+  color: white; 
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bookmark-checkbox:checked + .bookmark-label {
+  background-color: #010E54; 
+}
+
+.bookmark-label i {
+  font-size: 16px;
+}
+
+.post-content {
+  padding: 10px;
+  text-align: left; 
+}
+
+.post-content h3 {
+  font-size: 16px; 
+  margin: 10px 0 5px; 
+}
+
+.post-content p {
+  font-size: 14px;
+  color: #555; 
+}
